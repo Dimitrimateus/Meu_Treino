@@ -1,0 +1,15 @@
+# Configuração mínima da CLI do Supabase (usada por `supabase link`, `db push` e `functions deploy`).
+project_id = "treinos"
+
+[auth]
+enable_signup = false
+minimum_password_length = 8
+
+[auth.email]
+enable_signup = false
+
+[functions.cron-tick]
+verify_jwt = false
+
+[functions.admin-users]
+verify_jwt = true
